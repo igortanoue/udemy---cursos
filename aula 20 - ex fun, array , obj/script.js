@@ -4,11 +4,11 @@ function meuEscopo() {
     const resultado = document.querySelector('.res');
     const pessoas = [];
 
-    function criaPessoa(nome = '', sobrenome = '', peso = 0, altura = 0) {
+    /*function criaPessoa(nome = '', sobrenome = '', peso = 0, altura = 0) {
         return {
             nome, sobrenome, peso, altura
         };
-    }
+    }*/
     function recebeEventoForm(evento) {
         evento.preventDefault();
         const nome = form.querySelector('.nome');
