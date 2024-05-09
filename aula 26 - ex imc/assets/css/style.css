@@ -91,3 +91,15 @@ form button:hover {
 form button:active {
     background-color: var(--thirt-color);
 }
+
+.paragrafo-resultado {
+    background-color: var(--primary-color);
+    margin: auto;
+    width: 600px;
+}
+
+.bad {
+    background: darkred;
+    margin: auto;
+    width: 600px;
+}
