@@ -1,0 +1,185 @@
+
+
+// /*
+//  Não pode criar variavel com palavras reservadas
+//  Utilizamos camelCase
+//  Variaveis precisam ter nomes significativos
+//  não pode começar com número o nome da variavel
+//  Não podem conter espaços ou traços
+//  Case-sensitive
+//  Não podemos redeclarar variaveis com let
+// */
+
+// /*
+//  Não pode criar constante com palavras reservadas
+//  Utilizamos camelCase
+//  constantes precisam ter nomes significativos
+//  não pode começar com número o nome da constante
+//  Não podem conter espaços ou traços
+//  Case-sensitive
+//  Não podemos modificar uma constante
+//  não utilize var e sim const
+// */
+
+// let nome = 'luiz' // string
+// let num10 = 10// number
+// let nomeAluno; // undefined -> não aponta para local nenhuma na memoria
+// let sobrenomeAluno = null; // Nulo -> quer q não aponte nenhum p nenhum valor. não pode ser const - é considerado objeto
+// let resposta; // Boolean -> True ou False (Valor lógico)
+// console.log(typeof sobrenomeAluno, sobrenomeAluno)
+
+// /*
+// ordem precedencia
+// ()
+// **
+// * / %
+// + - 
+
+// Icremento = ++
+// Decremento = --
+// */
+
+// /*
+// let umaString= "Um\"texto\"";   // barra invertida escape
+// console.log(umaString);
+// */
+
+// let umaString= "Um texto";
+// console.log(umaString.charAt(3));   // .charAt()metodo pra mostrar o elemento, igual o []
+
+// console.log(umaString.indexOf('texto'))//.indexOf Pesquisa o elemento inicial da string, caso o final é lastIndexOf
+
+// console.log(umaString.match(/[a-z]/g)); // procura uma expressão regular, essa seria todas letras minuscular no texto
+
+// console.log(umaString.replace('Um', 'Outro')) // replace substitui
+
+// elementos = umaString.length;
+// //console.log(umaString.slice(2,5)); // corta a string pelos elementos (-2) Começa do penultimo elemento
+
+// console.log(umaString.split(' ',2)); // separa as string
+
+// //olhar a documentação na w3scholl js  //mdn javascript
+
+// console.log(umaString.toUpperCase()); // maiuscula, minuscula é toLowerCase() método.
+
+// num1 = Number(num1.toFixed(2));  // maneira adequada para arrendondar o numero e ser inteiro
+// console.log(num1);
+// console.log(Number.isInteger(num1));
+
+
+// // IEEE 754-2008 CALCULO DO JS
+// /*
+// console.log(num1.toString() + num2);   // variavel.toString() e não altera o valor da variavel 
+// console.log(num1.toFixed(2)); //definir as casas decimais
+// console.log(Number.isInteger(num1)); // retorna se é numero inteiro ou não
+
+// let temp = num1 * 'Oi';
+// console.log(Number.isNaN(temp)); // Estou perguntando se essa conta é um Is not a number (conta invalida)
+// */
+
+// //objeto math
+
+// let num1 = 9.51;
+
+// //let num2 = Math.floor(num1); // Arrendondando para baixo!
+// //let num2 = Math.ceil(num1); // Arrendoda para cima
+// //let num2 = Math.round(num1); // Arrendoda para o mais proximo.
+// //console.log(Math.max(1,2,3,4,5,-10,-50,1500,100)); // mostra o maior
+// //console.log(Math.min(1,2,3,4,5,-10,-50,1500,100)); // mostra o menor
+// const aleatorio = Math.round(Math.random() * (10-5)+5); // numero aleatorio de 0 e 1 porem pode fazer contas pra aumentar
+// console.log(aleatorio);
+// //console.log(Math.pow(2,10)) // potencia 2 ** 10
+// //console.log(Math.PI); // valor do pi
+// console.log(1/0.0) // retorna infinity, ocupa muito espaço na memoria e retorna Infinity e True.
+
+// // array
+
+// // alunos.push('Carlos');  // Adiciona um elemento ao final do array
+// // alunos.unshift('Souza'); // Adiciona no primeiro elemento
+// //console.log(alunos.slice(-2,)); // Fatiamento.
+
+// //let removido = alunos.pop(); // pode salvar o elemento removido em uma variavel
+// //alunos.shift(); // remove o primeiro elemento
+// //alunos.pop(); // remove o ultimo elemento
+// //delete alunos[1]; // remove o valor do item e deixa undefined o elemento
+
+// //console.log(typeof alunos); // array é um objeto indexado
+// //console.log(alunos instanceof Array); // pergunta se alunos é uma instancia de array
+
+// //console.log(alunos.lenght) // tamanho do array
+
+// // objeto
+// function criaPessoa (nome,sobrenome,idade){         //Parametro
+//     return {  // nome, sobrenome, idade FUNCIONA DESSA FORMA TAMBEM
+//         nome: nome,                               // retorna um objeto literal {}
+//         sobrenome: sobrenome,
+//         idade: idade
+//     };
+// }
+// let pessoa1= criaPessoa('Luiz','Otavio',25);             //Argumento
+// let pessoa2= criaPessoa('Maria','Silva',45);  
+// let pessoa3= criaPessoa('Carlos','Souza',23);  
+// let pessoa4= criaPessoa('José','Matia',73);  
+// let pessoa5= criaPessoa('Jean','Cruz',56);  
+
+
+
+// console.log(pessoa1.nome);
+
+// /*
+// Primitivos (imutaveis) - string, number, boolean, undefined, null (bigint, symbol)
+// Referencia (mutávlel) - array, object, function
+// */
+// /*
+// PRIMITIVO
+// let a = 'A';
+// let b = a; // Cópia
+// console.log(a,b);
+
+// a = 'Outra coisa';
+// console.log(a, b);
+// */
+//  /*
+// let a = [1, 2, 3];
+// let b = a; 
+// let c = [...a];  // Para fazer a copia sem ser por referencia.
+
+// /*
+// Operadores de comparação
+// > maior que
+// >= Maior que ou igual
+// < menor que
+// <= menor que ou igual a 
+// == igualdade  (valor)        *********** não usar
+// ===  igualdade estrita  (valor e tipagem)
+// !- diferente                 ************ não usar
+// !== diferente estrito    (valor e tipo)
+// */
+
+// // Operadores Logicos
+// // && -> And -> E  -> Todas as expressões precisam ser verdadeiras para retornar true
+// // || -> OR -> Ou   Alt+124  -> Se uma for verdadeira ela retorna True
+// // ! -> NOT -> NÃO  -> Inverte o valor de true pra false
+
+
+// // ternaria
+// // (condicao) ? 'Valor para Verdadeiro'  : 'Valor para falso';  
+
+// const pontuacaoUsuario = 999;         //   Verdadeira acontece isso    // Ou se não acontece isso.
+// const nivelUsario = pontuacaoUsuario >= 1000 ? 'Usuário VIP'             : 'Usuario normal';
+
+// const data = new Date();
+// console.log('Dia', data.getDate());
+// console.log('Mês', data.getMonth() +1);
+// console.log('Ano', data.getFullYear());
+// console.log('Hora', data.getHours());
+// console.log('Min', data.getMinutes());
+// console.log('Seg', data.getSeconds());
+// console.log('Ms', data.getMilliseconds());
+// console.log('Dia Semana', data.getDay()); // 0 - Domingo, 6 - Sabado
+// console.log(Date.now()); // da o valor em milesimo de segundo e da pra jogar na new date ()
+// console.log(data.toString());  
+
+// // Declaração de função ( Function hoisting ) hoisting = eleva as declarações de funcções para o topo do js, pode ser chamada antes ou depois de criar ela.
+
+// // First-class objects ( Objetos de primeira classe.)
