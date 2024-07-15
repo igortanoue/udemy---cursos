@@ -1,0 +1,34 @@
+// import { padStart } from 'core-js/core/string'
+
+// npm i --save-dev @babel/preset-env @babel/core @babel/cli babel-loader webpack webpack-cli regenerator-runtime core-js@2
+
+// criar um arquivo webpack.config.js
+
+// const path = require('path'); // CommonJS padrão do Node
+
+// module.exports = {
+//     mode: 'development',
+//     entry: './src/index.js',
+//     output: {
+//         path: path.resolve(__dirname, 'public', 'assets','js'),
+//         filename: 'bundle.js'
+//     },
+//     module: {
+//         rules: [{
+//             exclude: /node_modules/,
+//             test: /\.js$/,
+//             use: {
+//                 loader: 'babel-loader',
+//                 options: {
+//                     presets: ['@babel/env']
+//                 }
+//             }
+//         }]
+//     },
+//     devtool: 'source-map'
+// };
+
+// usar npm i no terminal pra instalar.
+
+// // trazendo a pasta node modules
+// npm install
