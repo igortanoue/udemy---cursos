@@ -674,3 +674,6 @@
 // console.log(nome, sobrenome2,idade);
 // console.log(nome2);
 // console.log(soma(5,4));
+
+//console.log(__filename);
+//console.log(__dirname);
