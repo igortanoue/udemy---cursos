@@ -677,3 +677,11 @@
 
 //console.log(__filename);
 //console.log(__dirname);
+//              Express é o exemplo
+// npm install express --save-dev  // Salver na dev dependencies
+// npm install express --save-prod // geral
+// npm unistall express // desinstalar
+// npm ls --depth =0 // ver os pacotes instalados
+// npm outdated // ver os desatualizados
+//major / minor / patch
+//2.      1.        0
