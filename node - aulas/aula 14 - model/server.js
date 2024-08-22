@@ -2,11 +2,13 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 
-const mongoose = require('mongoose');
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = "mongodb+srv://igortanoue:bigodinho123@cursojs01.nbgy9.mongodb.net/?retryWrites=true&w=majority&appName=cursojs01";
 
-mongoose.connect(process.env.CONNECTIONSTRING, {useNewUrlParser: true,  useUnifiedTopology: true })
+const mongoose = require('mongoose');
+const connect = 'mongodb+srv://igortanoue:bigodinho123@cursojs01.nbgy9.mongodb.net/?retryWrites=true&w=majority&appName=cursojs01authSource=admin';
+mongoose.connect(uri)
     .then(() => {
-        console.log('Conectei a base de dados.');
         app.emit('Pronto');
     })
     .catch(e => console.log(e));
