@@ -701,3 +701,36 @@
 // const json= JSON.stringify(pessoas, '', 2);
 
 // fs.writeFile(caminhoArquivo, json, { flag: 'w', enconding: 'utf-8'} );
+
+// Flash
+//  Dura somente 1 acesso,
+//  req.flash('info', 'Olá mundo!');
+//     req.flash('error', 'Deu errado irmão');
+//     req.flash('sucess', 'Tudo');
+//     console.log(req.session.usuario);
+
+// Sessao 
+//const sessionOptions = session({
+//     secret : 'asasasdadadsa',
+//     // store: new MongoStore({ mongooseConnection: mongoose.connection }),
+//     resave: false,
+//     saveUninitialized: false,
+//     cookie: {
+//         maxAge: 1000 * 60  * 60 * 24 * 7,
+//         httpOnly: true
+//     },
+//     store : MongoStore.create({mongoUrl: connect})
+// });
+// Como usar ela e dura pelo tempo configurado.
+//     req.session.usuario = { nome: 'Luiz', logado: true};
+//    console.log('Respondedo ao cliente.');
+//  EJS ATALHOS
+// <% controle de fluxo (if,for, else...)%>
+// <%= imprime escapando caracteres %>
+// <%- Imprime sem escapar caracteres %>
+// <%# Comentario %>
+// <%- include('CAMINHO/ARQUIVO'); %>
+
+//<% numeros.forEach( num => { %>
+//     <%= num %> <br>
+//  <% }) %>

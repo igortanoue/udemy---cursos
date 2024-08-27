@@ -1,0 +1,33 @@
+<%- include('includes/head'); %>
+
+<body>
+    <section class="container">
+        <h1>
+            <!-- tags ejs
+            <%= titulo %> <br>
+                executa o html com - antes e = não.
+            <%- titulo %>
+
+            <% if(typeof titulo !== 'undefined' ) { %>
+                <%= titulo %>
+            <% } else { %>
+                 O titulo não foi enviado
+             <% } %> -->
+
+             <% numeros.forEach( num => { %>
+                <%= num %> <br>
+             <% }) %>
+        </h1>
+        <form action="form">
+            <label>Cliente</label>
+            <input type="text" name="cliente">
+            <button>Submit</button>
+
+        </form>
+
+
+    </section>
+    <script src="assets/js/bundle.js"></script>
+</body>
+
+</html>
